@@ -2,6 +2,9 @@
 
 Small library for adding a `Feature-Policy` to Koa responses.
 
+**IMPORTANT** `Feature-Policy` is experimental, so this library might change
+frequently until the new header is stable.
+
 --------
 
 ## Installation
