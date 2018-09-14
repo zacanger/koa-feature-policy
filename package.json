@@ -1,6 +1,6 @@
 {
   "name": "koa-feature-policy",
-  "description": "koa-feature-policy",
+  "description": "Small library for adding a `Feature-Policy` to Koa responses.",
   "version": "0.0.1",
   "author": {
     "name": "Zac Anger",
