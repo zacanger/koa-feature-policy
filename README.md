@@ -17,7 +17,7 @@ import featurePolicy from 'koa-feature-policy'
 
 const options = {
   /* directive: allowlist */
-  vibrate: ['self', 'https://example.com']
+  vibrate: ["'self'", 'https://example.com']
 }
 
 app.use(featurePolicy(options))
