@@ -10,9 +10,25 @@ Small library for adding a `Feature-Policy` to Koa responses.
 
 ## Usage
 
-`import featurePolicy from 'koa-feature-policy'`
+```javascript
+import featurePolicy from 'koa-feature-policy'
 
-More docs to come.
+// set up koa
+
+const options = {
+  /* directive: allowlist */
+  vibrate: ['self', 'https://example.com']
+}
+
+app.use(featurePolicy(options))
+
+// call app.listen
+```
+
+See [MDN](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Feature-Policy) for the full list of directives.
+
+This library converts `camelCase` directives to `lisp-case`. So use
+`ambientLightSensor`, not `'ambient-light-sensor'`.
 
 ## License
 
