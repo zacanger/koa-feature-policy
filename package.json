@@ -13,8 +13,8 @@
     "preversion": "npm t",
     "start": "node index",
     "test": "run-s -s test:lint test:tape",
-    "test:lint": "eslint -c .eslintrc.json index.js",
-    "test:tape": "tape index.test.js"
+    "test:lint": "eslint -c .eslintrc.json *.js",
+    "test:tape": "tape *.test.js"
   },
   "homepage": "https://github.com/zacanger/koa-feature-policy#readme",
   "repository": {
@@ -30,7 +30,7 @@
   ],
   "dependencies": {
     "koa-header": "0.2.0",
-    "zeelib": "8.2.1"
+    "object-policy": "0.1.0"
   },
   "devDependencies": {
     "babel-eslint": "9.0.0",

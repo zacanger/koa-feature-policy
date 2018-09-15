@@ -28,7 +28,7 @@ const d3 = {
 
 tape.test('featurePolicy', (t) => {
   featurePolicy(d1)(ctx, next)
-  t.equal(ctx[fp], 'foo-bar: baz; ')
+  t.equal(ctx[fp], 'foo-bar: baz;')
   ctx.clear()
   featurePolicy(d2)(ctx, next)
   t.equal(ctx[fp], '')
@@ -37,6 +37,6 @@ tape.test('featurePolicy', (t) => {
   t.equal(ctx[fp], '')
   ctx.clear()
   featurePolicy(d3)(ctx, next)
-  t.equal(ctx[fp], 'one-two: a b c; quux: one two three; ')
+  t.equal(ctx[fp], 'one-two: a b c; quux: one two three;')
   t.end()
 })
