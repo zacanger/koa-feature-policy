@@ -29,6 +29,7 @@
     "security"
   ],
   "dependencies": {
+    "koa-header": "0.2.0",
     "zeelib": "8.2.1"
   },
   "devDependencies": {

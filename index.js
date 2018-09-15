@@ -1,3 +1,4 @@
+const koaHeader = require('koa-header')
 const fixCase = require('zeelib/lib/camel-case-to-lisp-case')
 
 const formatDirectives = (opts = {}) => {
@@ -17,8 +18,5 @@ const formatDirectives = (opts = {}) => {
 
 module.exports = (opts = {}) => {
   const directives = formatDirectives(opts)
-  return async (ctx, next) => {
-    ctx.set('Feature-Policy', directives)
-    await next()
-  }
+  return koaHeader('Feature-Policy', directives)
 }
