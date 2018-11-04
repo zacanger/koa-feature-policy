@@ -1,5 +1,13 @@
 # koa-feature-policy
 
+**Deprecated**
+
+`Feature-Policy` has been added to [Helmet](https://helmetjs.github.io/docs/),
+so please use [koa-helmet](https://github.com/venables/koa-helmet) to add this
+header (and lots of other great security header fixes) to your Koa apps.
+
+--------
+
 Small library for adding a `Feature-Policy` to Koa responses.
 
 **IMPORTANT** `Feature-Policy` is experimental, so this library might change
